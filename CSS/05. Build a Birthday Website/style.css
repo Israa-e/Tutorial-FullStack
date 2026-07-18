@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+    font-family: "Happy Monkey", system-ui;
+}
+
+#birthday_girl {
+    border-radius: 50%;
+    height: 200px;
+}

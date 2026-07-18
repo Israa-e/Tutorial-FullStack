@@ -1,0 +1,36 @@
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #2b2839;
+    background: #ddebf8;
+    border-bottom: 9px solid #d8cefe;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    background-color: #b8d9f3;
+    /* Darkens the button */
+    transform: scale(1.05);
+    /* Enlarges the button by 5% */
+
+}
+
+
+.border-blue {
+    border: 1px dotted #d8cefe;
+}
