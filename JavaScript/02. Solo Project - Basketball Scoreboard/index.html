@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero-text">
+            <p class="hero-label">SCRIMBA: MODULE 3</p>
+            <h1 class="hero-title">Basketball Scoreboard Counter</h1>
+            <p class="hero-description">
+                Within this project we are required to make a basketball scoreboard
+                according to the figma design. This is primarily a JavaScript project
+                where we are to use the knowledge gained within module 3 of Scrimba's
+                frontend career path course, we will be doing the HTML & CSS as well.
+            </p>
+            <div class="hero-buttons">
+                <a href="https://github.com/Israa-e/Tutorial-FullStack.git" target="_blank"
+                    class="btn-secondary">Project Repo</a>
+                <a href="https://scrimba.com/fullstack-path-c0fullstack?via=scrimbafcc" target="_blank"
+                    class="btn-primary">Learn at Scrimba</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/player.png" alt="Basketball player illustration">
+        </div>
+    </section>
+    <div class="container">
+        <div>
+            <h3>HOME</h3>
+            <div class="score-wrapper">
+                <div class="screen">
+                    <h1 class="count" id="home">0</h1>
+                </div>
+                <div class="screen_foul">
+                    <h1 class="count" id="foul_home">0</h1>
+                </div>
+            </div>
+            <div class="btn_disply">
+                <button class="btn" onclick="increase('home',1)" disabled>+1</button>
+                <button class="btn" onclick="increase('home',2)" disabled>+2</button>
+                <button class="btn" onclick="increase('home',3)" disabled>+3</button>
+            </div>
+            <button class="btn_control" onclick="increaseFouls('home')" disabled>Cause Foul</button>
+
+        </div>
+        <div class="timer">
+            <h4>TIMER:</h4>
+            <div class="timer_screen">
+                <h3 class="timer_text" id="timer-display">00:00</h3>
+            </div>
+            <h4>PERIOD:</h4>
+
+            <div class="period_screen">
+                <h3 id="period-display">1</h3>
+            </div>
+            <p id="winner-display" style="color:#fff; font-weight:bold; margin-top:10px;"></p>
+
+            <button class="start-btn" id="start-btn" onclick="startGame()">Start</button>
+            <button class="start-btn" onclick="newGame()">New Game</button>
+
+        </div>
+
+        <div>
+            <h3>GUEST</h3>
+            <div class="score-wrapper">
+
+                <div class="screen">
+                    <h1 class="count" id="guest">0</h1>
+                </div>
+                <div class="screen_foul">
+                    <h1 class="count" id="foul_guest">0</h1>
+                </div>
+            </div>
+            <div class="btn_disply">
+                <button class="btn" onclick="increase('guest',1)" disabled>+1</button>
+                <button class="btn" onclick="increase('guest',2)" disabled>+2</button>
+                <button class="btn" onclick="increase('guest',3)" disabled>+3</button>
+            </div>
+            <button class="btn_control" onclick="increaseFouls('guest')" disabled>Cause Foul</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

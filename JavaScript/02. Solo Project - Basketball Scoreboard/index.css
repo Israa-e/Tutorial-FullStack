@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FCAE8B;
+    padding: 60px 100px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.hero-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #2b2b3d;
+    margin: 0 0 20px 0;
+    line-height: 1.15;
+}
+
+.hero-description {
+    font-size: 17px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+img{
+border-radius: 50%;
+}
+.btn-secondary,
+.btn-primary {
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.btn-secondary {
+    background-color: #eeeeee;
+    color: #222;
+}
+
+.btn-primary {
+    background-color: #F7936F;
+    color: #fff;
+}
+
+.hero-image img {
+    max-width: 320px;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(229, 47%, 20%);
+    color: white;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 40px 0;
+    text-align: center;
+    margin: 100px;
+    border-radius: 50px;
+}
+
+.screen_foul {
+    background: #080001;
+    text-align: center;
+    color: #b4d219;
+    height: 45px;
+    width: 45px;
+    font-size: 14px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #9AABD8;
+
+    position: absolute;
+    bottom: -15px;
+    right: -10px;
+}
+
+.screen_foul .count {
+    margin: 0;
+    line-height: 1;
+    font-size: 20px;
+}
+
+.score-wrapper {
+    position: relative;
+    width: 155px;
+    /* match .screen width so the badge can anchor to its corner */
+}
+
+.screen {
+    width: 155px;
+    background: #080001;
+    text-align: center;
+    color: #F94F6D;
+    font-size: 60px;
+    height: 120px;
+    line-height: 126.67px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10 10;
+    border-radius: 5px;
+    border: 2px solid #9AABD8;
+    margin-left: 9px;
+    margin-top: 15px;
+    background: none;
+    color: #9AABD8;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    flex-direction: row;
+
+
+}
+
+.btn_disply {
+    display: flex;
+    padding-top: 20px;
+}
+
+.timer {
+    color: #9AABD8;
+    font-size: 16px;
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2;
+
+}
+
+.timer_screen {
+    background: #080001;
+    /* box background, untouched */
+    width: 165px;
+    height: 80px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.period_screen {
+    background: #080001;
+    /* box background, untouched */
+    width: 165px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color: #b4d219;
+}
+
+.timer_text {
+    margin: 0;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-size: 40px;
+    background: linear-gradient(#307223, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.btn_control {
+    padding: 10 10;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    background: #F94F6D;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    flex-direction: row;
+}
+
+.start-btn {
+    padding: 10 10;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    background: #252171;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    flex-direction: row;
+}
