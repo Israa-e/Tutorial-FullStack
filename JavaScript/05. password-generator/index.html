@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <title>password generator</title>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Generate a</h1>
+        <h1 class="green">random password</h1>
+        <h4>Never use an insecure password again.</h4>
+
+        <div class="control-row">
+            <span class="control-label">Password length: <b id="lengthValue">15</b></span>
+        </div>
+
+        <div class="slider-row">
+            <button type="button" class="round-btn" id="decreaseBtn" aria-label="Decrease length">&minus;</button>
+            <input type="range" id="length" min="4" max="50" value="15" class="slider">
+            <button type="button" class="round-btn" id="increaseBtn" aria-label="Increase length">&plus;</button>
+        </div>
+
+        <div class="control-row">
+            <span class="control-label">Characters used:</span>
+        </div>
+
+        <div class="checkbox-row">
+            <label class="check-option">
+                <input type="checkbox" id="useUpper" checked>
+                <span class="box"></span>
+                <span class="opt-label">ABC</span>
+            </label>
+            <label class="check-option">
+                <input type="checkbox" id="useLower" checked>
+                <span class="box"></span>
+                <span class="opt-label">abc</span>
+            </label>
+            <label class="check-option">
+                <input type="checkbox" id="useNumbers" checked>
+                <span class="box"></span>
+                <span class="opt-label">123</span>
+            </label>
+            <label class="check-option">
+                <input type="checkbox" id="useSymbols">
+                <span class="box"></span>
+                <span class="opt-label">#$&amp;</span>
+            </label>
+        </div>
+
+        <button id="generateBtn">Generate passwords</button>
+
+        <hr>
+        <div class="pass">
+            <div class="password" id="password1"></div>
+            <div class="password" id="password2"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

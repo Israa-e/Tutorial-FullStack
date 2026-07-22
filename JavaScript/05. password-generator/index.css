@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Konstanz';
+    src: url('assets/fonts/Fontspring-DEMO-konstanz-semibold.otf') format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    font-family: "Konstanz", serif;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #e5f1e9;
+    align-items: center;
+}
+
+.card {
+    background-color: #1c2430;
+    padding: 50px;
+    width: 500px;
+    border-radius: 25px;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    padding: 0;
+}
+
+h4 {
+    color: #787d8a;
+    margin: 0;
+    padding: 0;
+}
+
+.green {
+    color: #4ad480;
+}
+
+.control-row {
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+.control-label {
+    color: #cfd3da;
+    font-size: 15px;
+}
+
+.control-label b {
+    color: #fff;
+}
+
+/* Slider row with +/- round buttons */
+.slider-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.round-btn {
+    flex: 0 0 auto;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #3a4454;
+    background-color: transparent;
+    color: #cfd3da;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.round-btn:hover {
+    border-color: #12b075;
+    color: #4ad480;
+}
+
+.slider {
+    flex: 1 1 auto;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(to right, #12b075 0%, #12b075 var(--fill, 22%), #3a4454 var(--fill, 22%), #3a4454 100%);
+    outline: none;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #1c2430;
+    border: 2px solid #12b075;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #1c2430;
+    border: 2px solid #12b075;
+    cursor: pointer;
+}
+
+/* Character-type checkboxes */
+.checkbox-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.check-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.check-option input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.check-option .box {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #3a4454;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.check-option .box::after {
+    content: "";
+    width: 5px;
+    height: 9px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    margin-bottom: 2px;
+}
+
+.check-option input:checked + .box {
+    background-color: #12b075;
+    border-color: #12b075;
+}
+
+.check-option input:checked + .box::after {
+    opacity: 1;
+}
+
+.check-option input:disabled + .box {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+button#generateBtn {
+    background-color: #12b075;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 25px 0 10px 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button#generateBtn:hover {
+    background-color: #0f9a64;
+}
+
+hr {
+    background-color: #222a36;
+    height: 2px;
+    border: none;
+}
+
+.pass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.password {
+    background-color: #232f40;
+    padding: 15px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #49ac85;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    word-break: break-all;
+    transition: background-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.password.copied {
+    background-color: #12b075;
+    color: #fff;
+    animation: copiedPop 0.35s ease;
+}
+
+@keyframes copiedPop {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.08);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

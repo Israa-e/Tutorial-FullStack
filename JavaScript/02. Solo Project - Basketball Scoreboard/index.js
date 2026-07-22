@@ -64,6 +64,7 @@ function startGame() {
             seconds = 0;
             updateTimerDisplay();
             clearInterval(timerInterval);
+            setButtonsEnabled(false);
             isRunning = false;
             announceWinner();          // ← ضيفي هاد السطر
 
